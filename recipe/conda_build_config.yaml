@@ -1,0 +1,11 @@
+channel_targets:
+  - tudat-team main
+channel_sources:
+  - conda-forge
+  - defaults
+channels:
+  sources: [conda-forge, defaults]
+  targets:
+    - [tudat-team, main]
+
+
