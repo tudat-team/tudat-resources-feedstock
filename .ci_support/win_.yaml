@@ -1,9 +1,0 @@
-channel_sources:
-- conda-forge
-- defaults
-channel_targets:
-- tudat-team main
-m2w64_c_compiler:
-- m2w64-toolchain
-vc:
-- '14'

@@ -7,7 +7,7 @@ Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
-Summary: A C++ platform to perform astrodynamics and space research
+Summary: A curated database of resources to perform astrodynamics and space research
 
 
 
@@ -29,12 +29,11 @@ Current build status
         <img alt="macOS" src="https://img.shields.io/travis/com/tudat-team/tudat-resources-feedstock/master.svg?label=macOS">
       </a>
     </td>
-  </tr><tr>
-    <td>Appveyor</td>
+  </tr>
+  <tr>
+    <td>Windows</td>
     <td>
-      <a href="https://ci.appveyor.com/project/tudat-team/tudat-resources-feedstock/branch/master">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/tudat-team/tudat-resources-feedstock/master.svg?label=Windows">
-      </a>
+      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
     </td>
   </tr>
   <tr>
