@@ -1,10 +1,10 @@
 package:
   name: tudat-resources
-  version: 1.0.2
+  version: 1.0.3
 
 source:
   git_url: https://github.com/tudat-team/tudat-resources.git
-  git_rev: v1.0.2
+  git_rev: v1.0.3
 
 requirements:
   build:
@@ -15,6 +15,7 @@ requirements:
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('c') }}              # [not win]
     - cmake
+    - boost-cpp
 
 test:
   downstreams:
