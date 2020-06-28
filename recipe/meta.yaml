@@ -4,7 +4,7 @@ package:
 
 source:
   git_url: https://github.com/tudat-team/tudat-resources.git
-  git_rev: 6cdabd32e8397f2e3eea8a67d16b37f7b41d4863
+  git_rev: 7eac6e4158e46518450dcacd2c00c6433445b3d8
 
 requirements:
   build:
