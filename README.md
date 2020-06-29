@@ -7,7 +7,7 @@ Package license: BSD
 
 Feedstock license: BSD 3-Clause
 
-Summary: A curated database of resources to perform astrodynamics and space research
+Summary: A curated database of resources to perform astrodynamics and space research.
 
 
 
