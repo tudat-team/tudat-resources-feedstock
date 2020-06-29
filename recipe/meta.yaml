@@ -4,7 +4,16 @@ package:
 
 source:
   git_url: https://github.com/tudat-team/tudat-resources.git
-  git_rev: 7eac6e4158e46518450dcacd2c00c6433445b3d8
+  git_rev: 35f9f26b54cc8b8085754c6e0f6a73901ddeb215
+
+build:
+  # A non-negative integer representing the build number of the package.
+  #  Unlike the build string, the build_number is inspected by conda.
+  #  Conda uses it to sort packages that have otherwise identical names
+  #  and versions to determine the latest one. This is important because
+  #  new builds that contain bug fixes for the way a package is built may be
+  #  added to a repository.
+  number: 1
 
 requirements:
   build:
@@ -14,16 +23,17 @@ requirements:
     # or native when not cross-compiling), and any source pre-processors.
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('c') }}              # [not win]
-    - boost-cpp
     - cmake
 
-
 test:
-  downstreams:
-    - tudat
+  source_files:
+    - test/test_binary
+  commands:
+    - cd ./test/test_binary
+    - bash run_binary_test.sh
 
 about:
   home: http://tudat.tudelft.nl/
   license: BSD
   license_family: BSD
-  summary: A curated database of resources to perform astrodynamics and space research
+  summary: A curated database of resources to perform astrodynamics and space research.
