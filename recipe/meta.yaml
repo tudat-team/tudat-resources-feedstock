@@ -1,10 +1,10 @@
 package:
   name: tudat-resources
-  version: 1.0.6
+  version: 1.0.7
 
 source:
   git_url: https://github.com/tudat-team/tudat-resources.git
-  git_rev: 35f9f26b54cc8b8085754c6e0f6a73901ddeb215
+  git_rev: 8333706725e5822f9d117152c684286d030ebf6b
 
 build:
   # A non-negative integer representing the build number of the package.
@@ -13,7 +13,7 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: 3
+  number: 0
 
 requirements:
   build:
