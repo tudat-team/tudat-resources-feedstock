@@ -24,9 +24,11 @@ requirements:
     # system and include things such as revision control systems (Git, SVN) make
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('c') }}              # [not win]
-    - vs2017_{{ target_platform  }}    # [win]
+    - {{ compiler('cxx') }}              # [not win]
+    - {{ compiler('c') }}                # [not win]
+    - {{ compiler('m2w64_c') }}          # [win]
+    - {{ compiler('m2w64_cxx') }}        # [win]
+#    - vs2017_{{ target_platform  }}      # [win]
     - cmake
 
 test:
