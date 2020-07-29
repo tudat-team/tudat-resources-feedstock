@@ -1,5 +1,5 @@
 {% set name = "tudat-resources" %}
-{% set version = "1.0.10" %}
+  {% set version = "1.0.10" %}
 
 package:
   name: {{ name }}
@@ -26,9 +26,12 @@ requirements:
     # or native when not cross-compiling), and any source pre-processors.
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('c') }}              # [not win]
+    - vs2017_{{ target_platform  }}    # [win]
     - cmake
 
 test:
+  requires:
+    - cmake
   source_files:
     - test/test_binary
   commands:
@@ -39,9 +42,10 @@ about:
   home: http://tudat.tudelft.nl/
   license: BSD
   license_family: BSD
-  summary: A resource manager to perform astrodynamics and space research.
-  
+  summary: A resource manager aimed towards astrodynamics and space research.
+
 extra:
   recipe-maintainers:
     - ggarrett13
+
 
