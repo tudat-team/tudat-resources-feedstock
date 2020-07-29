@@ -5,9 +5,9 @@ Home: http://tudat.tudelft.nl/
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: A curated database of resources to perform astrodynamics and space research.
+Summary: A resource manager aimed towards astrodynamics and space research.
 
 
 
@@ -29,17 +29,12 @@ Current build status
         <img alt="macOS" src="https://img.shields.io/travis/com/tudat-team/tudat-resources-feedstock/master.svg?label=macOS">
       </a>
     </td>
-  </tr>
-  <tr>
-    <td>Windows</td>
+  </tr><tr>
+    <td>Appveyor</td>
     <td>
-      <img src="https://img.shields.io/badge/Windows-disabled-lightgrey.svg" alt="Windows disabled">
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+      <a href="https://ci.appveyor.com/project/tudat-team/tudat-resources-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/tudat-team/tudat-resources-feedstock/master.svg?label=Windows">
+      </a>
     </td>
   </tr>
 </table>
@@ -100,4 +95,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@ggarrett13](https://github.com/ggarrett13/)
 

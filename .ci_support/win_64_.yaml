@@ -1,0 +1,8 @@
+channel_sources:
+- conda-forge
+- defaults
+- tudat-team
+channel_targets:
+- tudat-team main
+target_platform:
+- win-64
