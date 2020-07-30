@@ -5,9 +5,7 @@ c_compiler:
 c_compiler_version:
 - '10'
 channel_sources:
-- conda-forge
-- defaults
-- tudat-team
+- conda-forge, defaults
 channel_targets:
 - tudat-team main
 cxx_compiler:
