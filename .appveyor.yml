@@ -11,7 +11,7 @@ environment:
     secure: 162vzpI6vqJ8dKusUseZODe+9BmwpKFBasmD7/L6rgHeqH1mMcfUbrbxdzjjaFE9
 
   matrix:
-    - CONFIG: win_64_target_platformwin-64
+    - CONFIG: win_64_
       CONDA_INSTALL_LOCN: C:\Miniconda36-x64
 
 

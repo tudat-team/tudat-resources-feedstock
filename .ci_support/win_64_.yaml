@@ -4,5 +4,7 @@ channel_sources:
 - tudat-team
 channel_targets:
 - tudat-team main
+m2w64_c_compiler:
+- m2w64-toolchain
 target_platform:
 - win-64
