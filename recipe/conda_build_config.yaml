@@ -1,14 +1,5 @@
 channel_targets:
   - tudat-team main
 channel_sources:
-  - tudat-team
-  - conda-forge
-  - defaults
-boost_cpp:
-  - 1.64
-channels:
-  sources: [tudat-team, conda-forge, defaults]
-  targets:
-    - [tudat-team, main]
-
-
+  - msys2, conda-forge, defaults    # [win]
+  - conda-forge, defaults           # [not win]
