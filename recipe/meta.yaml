@@ -17,6 +17,8 @@ build:
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
   number: 1
+  ignore_run_exports:
+    - m2w64-gcc-libs  # [win]
 
 requirements:
   build:
@@ -26,9 +28,9 @@ requirements:
     # or native when not cross-compiling), and any source pre-processors.
     - {{ compiler('cxx') }}              # [not win]
     - {{ compiler('c') }}                # [not win]
-#    - {{ compiler('m2w64_c') }}          # [win]
-#    - {{ compiler('m2w64_cxx') }}        # [win]
-    - vs2017_{{ target_platform  }}      # [win]
+    - {{ compiler('m2w64_c') }}         # [win]
+    - m2w64-toolchain                   # [win]
+#    - vs2017_{{ target_platform  }}      # [win]
     - cmake
 
 test:
