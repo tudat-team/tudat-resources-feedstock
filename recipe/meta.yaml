@@ -1,5 +1,5 @@
 {% set name = "tudat-resources" %}
-  {% set version = "1.0.10" %}
+  {% set version = "1.1.1" %}
 
 package:
   name: {{ name }}
@@ -30,11 +30,14 @@ requirements:
     - {{ compiler('c') }}                # [not win]
     - {{ compiler('m2w64_c') }}         # [win]
     - m2w64-toolchain                   # [win]
-#    - vs2017_{{ target_platform  }}      # [win]
     - cmake
 
 test:
   requires:
+    - {{ compiler('cxx') }}              # [not win]
+    - {{ compiler('c') }}                # [not win]
+    - {{ compiler('m2w64_c') }}          # [win]
+    - m2w64-toolchain                    # [win]
     - cmake
   source_files:
     - test/test_binary
