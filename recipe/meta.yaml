@@ -16,7 +16,7 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: 1
+  number: 2
   ignore_run_exports:
     - m2w64-gcc-libs  # [win]
 
