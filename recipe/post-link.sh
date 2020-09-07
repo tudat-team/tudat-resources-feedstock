@@ -7,4 +7,4 @@ HIDDEN_PATH=$HOME/.tudat
 mkdir -p "$HIDDEN_PATH/resource/"
 
 # attempt to copy resources to home folder
-mv "$PREFIX"/resource/* "$HIDDEN_PATH"/resource/
+cp -a "$PREFIX"/resource/. "$HIDDEN_PATH"/resource/

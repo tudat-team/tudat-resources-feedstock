@@ -5,6 +5,8 @@ channels:
   targets:
   - [tudat-team, main]
 
+conda_forge_output_validation: true
+
 provider:
   linux: azure
   osx: azure
@@ -15,3 +17,12 @@ provider:
 appveyor:
   secure:
     BINSTAR_TOKEN: 162vzpI6vqJ8dKusUseZODe+9BmwpKFBasmD7/L6rgHeqH1mMcfUbrbxdzjjaFE9
+
+
+
+azure:
+  # flag for forcing the building all supported providers
+  force: True
+  # toggle for storing the conda build_artifacts directory (including the
+  # built packages) as an Azure pipeline artifact that can be downloaded
+  store_build_artifacts: True
