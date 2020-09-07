@@ -12,7 +12,7 @@ cmake \
     -DPREFIX=$PREFIX \
     ..
 
-make -j2
+make -j1
 
 ctest --verbose
 

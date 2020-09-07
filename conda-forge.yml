@@ -6,9 +6,9 @@ channels:
   - [tudat-team, main]
 
 provider:
-  linux: circle
-  osx: travis
-  win: appveyor
+  linux: azure
+  osx: azure
+  win: azure
   linux_ppc64le: None
   linux_aarch64: None
 
