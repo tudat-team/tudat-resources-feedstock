@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# create destination resource folder
-mkdir -p $HOME/.tudat/resource/
+# set hidden path
+HIDDEN_PATH=$HOME/.tudat
+
+# create destination hidden folder & resource folder
+mkdir -p "$HIDDEN_PATH/resource/"
 
 # attempt to copy resources to home folder
-mv $PREFIX/resource/* $HOME/.tudat/resource/
+mv "$PREFIX/resource/*" "$HIDDEN_PATH/resource/"
