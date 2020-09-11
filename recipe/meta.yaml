@@ -16,9 +16,8 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: 2
-  ignore_run_exports:
-    - m2w64-gcc-libs  # [win]
+  number: 3   # [win]
+  number: 2   # [not win]
 
 requirements:
   build:
@@ -26,18 +25,14 @@ requirements:
     # system and include things such as revision control systems (Git, SVN) make
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
-    - {{ compiler('cxx') }}              # [not win]
-    - {{ compiler('c') }}                # [not win]
-    - {{ compiler('m2w64_c') }}         # [win]
-    - m2w64-toolchain                   # [win]
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - cmake
 
 test:
   requires:
-    - {{ compiler('cxx') }}              # [not win]
-    - {{ compiler('c') }}                # [not win]
-    - {{ compiler('m2w64_c') }}          # [win]
-    - m2w64-toolchain                    # [win]
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
     - cmake
   source_files:
     - test/test_binary
