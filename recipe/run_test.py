@@ -10,3 +10,6 @@ else:
 print("Home Path: ", home_path)
 print("OS detected: ", sys.platform)
 assert os.path.exists(os.path.join(home_path, ".tudat/resource")) == True
+
+# check one level deeper to ensure recursive copy
+assert os.path.exists(os.path.join(home_path, ".tudat/resource/earth_orientation")) == True
