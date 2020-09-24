@@ -10,5 +10,5 @@ if not exist "%HIDDEN_PATH%/resource" mkdir "%HIDDEN_PATH%/resource"
 if errorlevel 1 exit 1
 
 :: attempt to copy resources to home folder
-xcopy "%PREFIX%/resource/." "%HIDDEN_PATH%/resource" /s /e
+xcopy "%LIBRARY_PREFIX%/resource/." "%HIDDEN_PATH%/resource" /s /e
 if errorlevel 1 exit 1
