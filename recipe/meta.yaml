@@ -16,8 +16,8 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: 4   # [win]
-  number: 3   # [not win]
+  number: 5   # [win]
+  number: 4   # [not win]
 
 requirements:
   build:
