@@ -8,3 +8,6 @@ mkdir -p "$HIDDEN_PATH/resource/"
 
 # attempt to copy resources to home folder
 cp -a "$PREFIX"/resource/. "$HIDDEN_PATH"/resource/
+
+# debug
+echo "PREFIX PATH: $PREFIX"
