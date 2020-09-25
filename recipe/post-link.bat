@@ -13,6 +13,6 @@ if errorlevel 1 exit 1
 echo "PREFIX: %PREFIX%"
 
 :: attempt to copy resources to home folder
-xcopy "%PREFIX%/Library/resource" "%HIDDEN_PATH%/resource" /s /e
+xcopy "%PREFIX%/Library/resource" "%HIDDEN_PATH%/resource" /s /e /y
 if errorlevel 1 exit 1
 
