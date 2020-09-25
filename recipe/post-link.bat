@@ -9,9 +9,10 @@ if errorlevel 1 exit 1
 if not exist "%HIDDEN_PATH%/resource" mkdir "%HIDDEN_PATH%/resource"
 if errorlevel 1 exit 1
 
+:: debug
+echo "PREFIX: %PREFIX%"
+
 :: attempt to copy resources to home folder
-xcopy "%PREFIX%/resource" "%HIDDEN_PATH%/resource" /s /e
+xcopy "%PREFIX%/Library/resource" "%HIDDEN_PATH%/resource" /s /e
 if errorlevel 1 exit 1
 
-:: debug
-echo "PREFIX PATH: %PREFIX%"
