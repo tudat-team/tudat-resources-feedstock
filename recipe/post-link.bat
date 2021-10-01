@@ -8,6 +8,8 @@ set RESOURCE_GIT_URL="https://github.com/tudat-team/tudat-resources.git"
 @REM Read whole variable of git_rev.txt file into variable
 set RESOURCE_GIT_REV="%GIT_FULL_HASH%"
 
+echo "RESOURCE_GIT_REV: %RESOURCE_GIT_REV%"
+
 @REM Create destination hidden folder
 if not exist "%HIDDEN_PATH%" mkdir "%HIDDEN_PATH%"
 if errorlevel 1 exit 1
