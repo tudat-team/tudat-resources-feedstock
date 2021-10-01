@@ -6,7 +6,7 @@ set TEMP_PATH=./tmp/
 set RESOURCE_GIT_URL="https://github.com/tudat-team/tudat-resources.git"
 
 @REM Read whole file of git_rev.txt file into variable
-set /p RESOURCE_GIT_REV=<git_rev.txt
+set /p RESOURCE_GIT_REV=<"%RECIPE_DIR%/git_rev.txt"
 
 echo "RESOURCE_GIT_REV: %RESOURCE_GIT_REV%"
 

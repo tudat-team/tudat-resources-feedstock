@@ -1,7 +1,6 @@
 #!/bin/bash
 RESOURCE_GIT_URL="https://github.com/tudat-team/tudat-resources.git"
-RESOURCE_GIT_REV=$(<git_rev.txt)
-
+RESOURCE_GIT_REV=$(<${RECIPE_DIR}/git_rev.txt)
 # set hidden path
 HIDDEN_PATH=$HOME/.tudat
 TARGET_PATH="$HIDDEN_PATH"/resource/
