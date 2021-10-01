@@ -13,6 +13,8 @@ mkdir -p $TARGET_PATH
 # clone the git repo to a tmp directory
 git clone $RESOURCE_GIT_URL $TEMP_PATH --verbose
 
+echo "RESOURCE_GIT_REV: ${RESOURCE_GIT_REV}"
+
 # enter the tmp directory
 cd $TEMP_PATH/
 
