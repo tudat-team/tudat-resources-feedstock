@@ -8,7 +8,10 @@ set RESOURCE_GIT_URL="https://github.com/tudat-team/tudat-resources.git"
 @REM Read whole file of git_rev.txt file into variable
 set /p RESOURCE_GIT_REV=<"%RECIPE_DIR%/git_rev.txt"
 
+@REM Debugging 42
 echo "RESOURCE_GIT_REV: %RESOURCE_GIT_REV%"
+echo "RECIPE_DIR      : %RECIPLE_DIR%"
+dir /b /a-d
 
 @REM Create destination hidden folder
 if not exist "%HIDDEN_PATH%" mkdir "%HIDDEN_PATH%"

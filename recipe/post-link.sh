@@ -10,6 +10,11 @@ TEMP_PATH=./tmp/
 mkdir -p $TARGET_PATH
 mkdir -p $TEMP_PATH
 
+# Debugging 101 
+echo "INSIDE_RECIPE_DIR: $(ls ${RECIPE_DIR})"
+echo "RESOURCE_GIT_REV ${RESOURCE_GIT_REV}"
+echo "RECIPE_DIR ${RECIPE_DIR}"
+
 cd $TEMP_PATH
 
 # fetch get only the target sha1
