@@ -27,6 +27,6 @@ if errorlevel 1 exit 1
 git clone --depth 1 --branch %RESOURCE_GIT_REV% %RESOURCE_GIT_URL% "%TEMP_PATH%"    
 
 @REM attempt to copy resources to home folder
-xcopy "%TEMP_PATH%/resource" "%HIDDEN_PATH%/resource" /s /e /y
+xcopy "%TEMP_PATH%resource" "%HIDDEN_PATH%/resource" /s /e /y
 if errorlevel 1 exit 1
 
