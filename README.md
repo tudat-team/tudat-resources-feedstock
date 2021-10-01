@@ -5,11 +5,9 @@ Home: http://tudat.tudelft.nl/
 
 Package license: BSD
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/tudat-team/tudat-resources-feedstock/blob/master/LICENSE.txt)
 
 Summary: A resource manager aimed towards astrodynamics and space research.
-
-
 
 Current build status
 ====================
@@ -43,6 +41,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
@@ -71,6 +76,7 @@ Installing `tudat-resources` from the `tudat-team` channel can be achieved by ad
 
 ```
 conda config --add channels tudat-team
+conda config --set channel_priority strict
 ```
 
 Once the `tudat-team` channel has been enabled, `tudat-resources` can be installed with:
@@ -105,9 +111,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

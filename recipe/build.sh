@@ -14,6 +14,8 @@ cmake \
 
 make -j1
 
-ctest --verbose
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
+  ctest --verbose
+fi
 
 make install
