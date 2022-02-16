@@ -5,7 +5,7 @@ Home: http://tudat.tudelft.nl/
 
 Package license: BSD
 
-Feedstock license: [BSD-3-Clause](https://github.com/tudat-team/tudat-resources-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/tudat-team/feedstock-feedstock/blob/master/LICENSE.txt)
 
 Summary: A resource manager aimed towards astrodynamics and space research.
 
@@ -21,7 +21,7 @@ Current build status
       <details>
         <summary>
           <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
-            <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master">
+            <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/feedstock-feedstock?branchName=master">
           </a>
         </summary>
         <table>
@@ -30,28 +30,28 @@ Current build status
               <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/feedstock-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/feedstock-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64</td>
               <td>
                 <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/feedstock-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
-                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
+                  <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/feedstock-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
                 </a>
               </td>
             </tr>
