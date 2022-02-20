@@ -1,7 +1,7 @@
 import sys
 import os
 
-if sys.platform == "win32" or sys.platform == "win64":
+if sys.platform == "win32":
     home_path = os.path.join(os.environ["HOMEDRIVE"], os.environ["HOMEPATH"])
     print(f"Checking {home_path} for .tudat/resource existence.")
 else:
