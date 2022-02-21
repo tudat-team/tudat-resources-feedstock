@@ -1,5 +1,7 @@
 {% set name = "tudat-resources" %}
   {% set version = "1.2.0" %}
+  {% set build = "0" %}
+  {% set git_rev = "8ef7ca3f44f5a4a4c61aab9a37bbe36ff6f7777c" %}
 
 package:
   name: {{ name }}
@@ -7,7 +9,7 @@ package:
 
 source:
   git_url: https://github.com/tudat-team/{{ name }}.git
-  git_rev: 8ef7ca3f44f5a4a4c61aab9a37bbe36ff6f7777c
+  git_rev: {{ git_rev }}
 
 build:
   # A non-negative integer representing the build number of the package.
@@ -16,6 +18,7 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
+  number: {{ build }}
 
 requirements:
   build:
