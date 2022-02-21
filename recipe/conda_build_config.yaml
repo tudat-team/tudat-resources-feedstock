@@ -1,4 +1,4 @@
 channel_targets:
-  - tudat-team @SUBCHANNEL@
+  - tudat-team dev
 channel_sources:
-  - tudat-team @SUBCHANNEL@, tudat-team, conda-forge, defaults
+  - tudat-team dev, tudat-team, conda-forge, defaults
