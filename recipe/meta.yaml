@@ -1,7 +1,8 @@
 {% set name = "tudat-resources" %}
-  {% set version = "1.2.0" %}
+  {% set version = "1.2.0
+" %}
   {% set build = "0" %}
-  {% set git_rev = "8ef7ca3f44f5a4a4c61aab9a37bbe36ff6f7777c" %}
+  {% set git_rev = "0952fd3f3d2a8350bb18f27a6a32351b45082336" %}
 
 package:
   name: {{ name }}
@@ -27,19 +28,6 @@ requirements:
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
     - cmake
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-
-test:
-  requires:
-    - {{ compiler('cxx') }}
-    - {{ compiler('c') }}
-    - cmake
-  source_files:
-    - test/test_binary
-  commands:
-    - cd ./test/test_binary
-    - bash run_binary_test.sh
 
 about:
   home: http://tudat.tudelft.nl/
@@ -49,6 +37,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - ggarrett13
+    - geoffreygarrett
 
 
