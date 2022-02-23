@@ -1,7 +1,7 @@
 {% set name = "tudat-resources" %}
-  {% set version = "1.2.1.dev2" %}
+  {% set version = "1.2.1.dev3" %}
   {% set build = "0" %}
-  {% set git_rev = "c0ec9389b7022d0220ccc1e51ddb797fd45742aa" %}
+  {% set git_rev = "1.2.1.dev3" %}
 
 package:
   name: {{ name }}
