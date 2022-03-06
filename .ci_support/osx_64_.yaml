@@ -1,9 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 channel_sources:
-- tudat-team dev, tudat-team, conda-forge, defaults
+- tudat-team, tudat-team, conda-forge, defaults
 channel_targets:
-- ''
+- tudat-team
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
