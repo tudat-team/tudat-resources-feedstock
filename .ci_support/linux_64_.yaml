@@ -3,7 +3,7 @@ cdt_name:
 channel_sources:
 - tudat-team, tudat-team, conda-forge, defaults
 channel_targets:
-- tudat-team
+- tudat-team dev
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 target_platform:

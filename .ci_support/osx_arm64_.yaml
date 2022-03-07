@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 channel_sources:
 - tudat-team, tudat-team, conda-forge, defaults
 channel_targets:
-- tudat-team
+- tudat-team dev
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
