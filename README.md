@@ -79,16 +79,41 @@ conda config --add channels tudat-team
 conda config --set channel_priority strict
 ```
 
-Once the `tudat-team` channel has been enabled, `tudat-resources` can be installed with:
+Once the `tudat-team` channel has been enabled, `tudat-resources` can be installed with `conda`:
 
 ```
 conda install tudat-resources
 ```
 
-It is possible to list all of the versions of `tudat-resources` available on your platform with:
+or with `mamba`:
+
+```
+mamba install tudat-resources
+```
+
+It is possible to list all of the versions of `tudat-resources` available on your platform with `conda`:
 
 ```
 conda search tudat-resources --channel tudat-team
+```
+
+or with `mamba`:
+
+```
+mamba search tudat-resources --channel tudat-team
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search tudat-resources --channel tudat-team
+
+# List packages depending on `tudat-resources`:
+mamba repoquery whoneeds tudat-resources --channel tudat-team
+
+# List dependencies of `tudat-resources`:
+mamba repoquery depends tudat-resources --channel tudat-team
 ```
 
 
