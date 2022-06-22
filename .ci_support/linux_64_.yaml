@@ -16,3 +16,6 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 target_platform:
 - linux-64
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
