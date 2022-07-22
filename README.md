@@ -20,7 +20,7 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+          <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=4&branchName=master">
             <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master">
           </a>
         </summary>
@@ -29,28 +29,28 @@ Current build status
           <tbody><tr>
               <td>linux_64</td>
               <td>
-                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=4&branchName=master">
                   <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64</td>
               <td>
-                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=4&branchName=master">
                   <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64</td>
               <td>
-                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=4&branchName=master">
                   <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=osx&configuration=osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64</td>
               <td>
-                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=&branchName=master">
+                <a href="https://dev.azure.com/tudat-team/feedstock-builds/_build/latest?definitionId=4&branchName=master">
                   <img src="https://dev.azure.com/tudat-team/feedstock-builds/_apis/build/status/tudat-resources-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
                 </a>
               </td>
@@ -79,16 +79,41 @@ conda config --add channels tudat-team
 conda config --set channel_priority strict
 ```
 
-Once the `tudat-team` channel has been enabled, `tudat-resources` can be installed with:
+Once the `tudat-team` channel has been enabled, `tudat-resources` can be installed with `conda`:
 
 ```
 conda install tudat-resources
 ```
 
-It is possible to list all of the versions of `tudat-resources` available on your platform with:
+or with `mamba`:
+
+```
+mamba install tudat-resources
+```
+
+It is possible to list all of the versions of `tudat-resources` available on your platform with `conda`:
 
 ```
 conda search tudat-resources --channel tudat-team
+```
+
+or with `mamba`:
+
+```
+mamba search tudat-resources --channel tudat-team
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search tudat-resources --channel tudat-team
+
+# List packages depending on `tudat-resources`:
+mamba repoquery whoneeds tudat-resources --channel tudat-team
+
+# List dependencies of `tudat-resources`:
+mamba repoquery depends tudat-resources --channel tudat-team
 ```
 
 
