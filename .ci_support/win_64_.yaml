@@ -1,5 +1,5 @@
 channel_sources:
-- tudat-team, tudat-team, conda-forge, defaults
+- tudat-team, conda-forge, defaults
 channel_targets:
 - tudat-team dev
 target_platform:

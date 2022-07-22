@@ -1,7 +1,7 @@
 cdt_name:
 - cos6
 channel_sources:
-- tudat-team, tudat-team, conda-forge, defaults
+- tudat-team, conda-forge, defaults
 channel_targets:
 - tudat-team dev
 docker_image:

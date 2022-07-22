@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
 channel_sources:
-- tudat-team, tudat-team, conda-forge, defaults
+- tudat-team, conda-forge, defaults
 channel_targets:
 - tudat-team dev
 macos_machine:
