@@ -1,33 +1,44 @@
 #!/bin/bash
-RESOURCE_GIT_URL="https://github.com/tudat-team/tudat-resources.git"
-RESOURCE_GIT_REV="c1306808bc98614b717599627e7b22e0a20054eb"
-# set hidden path
-HIDDEN_PATH=$HOME/.tudat
-TARGET_PATH="$HIDDEN_PATH"/resource/
-TEMP_PATH=./tmp/
 
-# create destination hidden folder & resource folder
-mkdir -p $TARGET_PATH
-mkdir -p $TEMP_PATH
+# *********************************************************** 
+#
+# This script downloads the raw data files distributed manually as release on 
+# the tudat-resources Github repository and places them in $HOME/.tudat/resource
+# directory on the host machine. 
 
-# Debugging 101 
-echo "INSIDE_RECIPE_DIR: $(ls ${RECIPE_DIR})"
-echo "RESOURCE_GIT_REV ${RESOURCE_GIT_REV}"
-echo "RECIPE_DIR ${RECIPE_DIR}"
+# This script is written precisely to download the data files distributed 
+# directly as GitHub releases, because in the future, Github would block pushing
+# data files > 100 MB to the repository, so they need to be distributed as
+# releases-only. 
+# In order for this script to function correctly, upload only a single zip file
+# with the name <resource> containing all the sub directories with the data 
+# files, i.e., the resource/ in master, or the data/ in develop.
+#
+# The script is run automatically by conda as the last step in the installation
+# process of the conda package tudat-resources on the host machine.
+# 
+# **********************************************************
 
-cd $TEMP_PATH
 
-# fetch get only the target sha1
-git init
-git remote add origin $RESOURCE_GIT_URL
-git fetch origin ${RESOURCE_GIT_REV}
-git reset --hard FETCH_HEAD
+PKG_VERSION=v1.2.1.dev5
+RESOURCE_GITHUB_URL="https://github.com/niketagrawal/tudat-resources/releases/download/$PKG_VERSION/resource.tar.gz"
 
-# copy the resource subdirectory to
-cp -a ./resource/. $TARGET_PATH
+# Target location on the host machine where the data files will be downloaded
+TARGET_LOCATION=$HOME/.tudat/
 
-# go back 2 levels
-cd ../
+# Remove target directory if already present
+# Add code
 
-# delete the tmp directory
-rm -rf $TEMP_PATH
+# Create the target directory on the host machine
+mkdir -p $TARGET_LOCATION
+
+cd $TARGET_LOCATION
+
+# Fetch the Github release containing the raw data files
+curl -JLO $RESOURCE_GITHUB_URL
+
+# Unpack the content and place it in resource/
+tar -xvf resource.tar.gz
+
+# [Optional] Delete the original tar file
+rm -rf resource.tar.gz
