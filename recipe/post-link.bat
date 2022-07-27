@@ -17,9 +17,15 @@
 :: 
 :: **********************************************************
 
+@REM DEBUG
+echo "HOMEDRIVE is %HOMEDRIVE%"
+echo "HOMEPATH is %HOMEPATH%"
 
 @REM set hidden path for tudat
 set HIDDEN_PATH=%HOMEDRIVE%/%HOMEPATH%/.tudat
+
+@REM DEBUG
+echo "HIDDEN_PATH is %HIDDEN_PATH%"
 
 @REM Set package version
 set PKG_VERSION=v1.2.1.dev5
@@ -31,14 +37,24 @@ set RESOURCE_GITHUB_URL="https://github.com/niketagrawal/tudat-resources/release
 if not exist "%HIDDEN_PATH%" mkdir "%HIDDEN_PATH%"
 if errorlevel 1 exit 1
 
+@REM DEBUG 
+if exist "%HIDDEN_PATH%" echo "Directory %HIDDEN_PATH% exists"
+
 @REM Go to target location
-cd %HIDDEN_PATH%
+cd /d %HIDDEN_PATH%
+
+@REM DEBUG
+echo "Current directory is %CD%"
 
 @REM Fetch the Github release containing the raw data files
 curl -JLO %RESOURCE_GITHUB_URL%
 
 @REM Unpack the content and place it in resource/
 tar -xvf resource.tar.gz
+
+@REM DEBUG: Check if directory %HIDDEN_PATH%/.tudat/resource exists 
+set RESOURCE_PATH=%HIDDEN_PATH%/resource
+if exist "%RESOURCE_PATH%" echo "Directory %RESOURCE_PATH% exists"
 
 @REM [Optional] Delete the original tar file
 del .\resource.tar.gz
