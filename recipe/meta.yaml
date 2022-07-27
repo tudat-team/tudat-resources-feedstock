@@ -30,12 +30,14 @@ requirements:
     - {{ compiler('clang') }}          # [win]
     - cmake
     - make                             # [unix]
+    - curl
 
 test:
   requires:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - cmake
+    - curl
   source_files:
     - test/test_binary
   commands:
