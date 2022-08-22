@@ -29,6 +29,7 @@ requirements:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make                     # [unix]
 
 test:
   requires:
