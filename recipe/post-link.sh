@@ -20,8 +20,8 @@
 # **********************************************************
 
 
-PKG_VERSION=v1.2.1.dev5
-RESOURCE_GITHUB_URL="https://github.com/niketagrawal/tudat-resources/releases/download/$PKG_VERSION/resource.tar.gz"
+PKG_VERSION=v2.0
+RESOURCE_GITHUB_URL="https://github.com/tudat-team/tudat-resources/releases/download/$PKG_VERSION/resource.tar.gz"
 
 # Target location on the host machine where the data files will be downloaded
 TARGET_LOCATION=$HOME/.tudat/

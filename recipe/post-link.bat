@@ -28,10 +28,10 @@ set HIDDEN_PATH=%HOMEDRIVE%/%HOMEPATH%/.tudat
 echo "HIDDEN_PATH is %HIDDEN_PATH%"
 
 @REM Set package version
-set PKG_VERSION=v1.2.1.dev5
+set PKG_VERSION=v2.0
 
 @REM Set resource git URL and REV
-set RESOURCE_GITHUB_URL="https://github.com/niketagrawal/tudat-resources/releases/download/%PKG_VERSION%/resource.tar.gz"
+set RESOURCE_GITHUB_URL="https://github.com/tudat-team/tudat-resources/releases/download/%PKG_VERSION%/resource.tar.gz"
 
 @REM Create destination hidden folder
 if not exist "%HIDDEN_PATH%" mkdir "%HIDDEN_PATH%"
