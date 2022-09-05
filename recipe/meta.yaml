@@ -1,7 +1,5 @@
 {% set name = "tudat-resources" %}
-  {% set version = "1.2.0" %}
-  {% set build = "7" %}
-  {% set git_rev = "8ef7ca3f44f5a4a4c61aab9a37bbe36ff6f7777c" %}
+  {% set version = "2.0" %}
 
 package:
   name: {{ name }}
@@ -9,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/tudat-team/{{ name }}.git
-  git_rev: {{ git_rev }}
+  git_rev: 1bc62b340a402b0055fab5a3377c5f006c50f517
 
 build:
   # A non-negative integer representing the build number of the package.
@@ -18,7 +16,8 @@ build:
   #  and versions to determine the latest one. This is important because
   #  new builds that contain bug fixes for the way a package is built may be
   #  added to a repository.
-  number: {{ build }}
+  number: 0   # [win]
+  number: 0   # [not win]
 
 requirements:
   build:
@@ -26,16 +25,19 @@ requirements:
     # system and include things such as revision control systems (Git, SVN) make
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
+    - {{ compiler('cxx') }}            # [not win]
+    - {{ compiler('c') }}              # [not win]
+    - {{ compiler('clang') }}          # [win]
     - cmake
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-    - make                     # [unix]
+    - make                             # [unix]
+    - curl
 
 test:
   requires:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - cmake
+    - curl
   source_files:
     - test/test_binary
   commands:
