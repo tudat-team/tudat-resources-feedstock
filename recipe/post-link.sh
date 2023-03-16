@@ -34,7 +34,7 @@ cd ../
 # delete the tmp directory
 rm -rf $TEMP_PATH
 
-PKG_VERSION=v2.0
+PKG_VERSION=v2.1
 RESOURCE_GITHUB_URL="https://github.com/tudat-team/tudat-resources/releases/download/$PKG_VERSION/resource.tar.gz"
 
 # Target location on the host machine where the data files will be downloaded
