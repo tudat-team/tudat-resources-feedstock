@@ -27,7 +27,6 @@ requirements:
     # or native when not cross-compiling), and any source pre-processors.
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
-    - {{ compiler('clang') }}  # [win]
     - cmake
     - make                             # [unix]
     - curl

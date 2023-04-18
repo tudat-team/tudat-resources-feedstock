@@ -1,12 +1,12 @@
 c_compiler:
-- clang
+- vs2019
 channel_sources:
-- tudat-team, conda-forge, defaults
+- conda-forge, defaults
 channel_targets:
 - tudat-team main
 curl:
 - '8'
 cxx_compiler:
-- clang
+- vs2019
 target_platform:
 - win-64
