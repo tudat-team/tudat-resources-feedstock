@@ -3,17 +3,17 @@ MACOSX_DEPLOYMENT_TARGET:
 c_compiler:
 - clang
 c_compiler_version:
-- '14'
+- '15'
 channel_sources:
-- tudat-team, conda-forge, defaults
+- conda-forge, defaults
 channel_targets:
 - tudat-team main
 curl:
-- '7'
+- '8'
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '14'
+- '15'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
