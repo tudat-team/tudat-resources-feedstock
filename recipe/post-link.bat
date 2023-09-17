@@ -29,7 +29,7 @@ set TEMP_PATH=./tmp/
 echo "HIDDEN_PATH is %HIDDEN_PATH%"
 
 @REM Set package version
-set PKG_VERSION=v2.1
+set PKG_VERSION=v2.2
 
 @REM Set resource git URL and REV
 set RESOURCE_GITHUB_URL="https://github.com/tudat-team/tudat-resources/releases/download/%PKG_VERSION%/resource.tar.gz"
