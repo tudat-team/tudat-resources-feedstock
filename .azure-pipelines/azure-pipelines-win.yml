@@ -43,11 +43,12 @@ jobs:
         PYTHONUNBUFFERED: 1
         CONFIG: $(CONFIG)
         CI: azure
+        flow_run_id: azure_$(Build.BuildNumber).$(System.JobAttempt)
+        remote_url: $(Build.Repository.Uri)
+        sha: $(Build.SourceVersion)
         UPLOAD_PACKAGES: $(UPLOAD_PACKAGES)
         UPLOAD_TEMP: $(UPLOAD_TEMP)
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
     - script: |
         set CI=azure
         set CI_RUN_ID=$(build.BuildNumber).$(system.JobAttempt)
