@@ -1,4 +1,4 @@
-# tudatpy
+# tudat resources feedstock
 
 Repository for the feedstock to build conda packages of the [tudat-resources](https://github.com/tudat-team/tudat-resources/) repository.
 
