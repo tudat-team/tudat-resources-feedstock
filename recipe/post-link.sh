@@ -19,21 +19,6 @@
 # 
 # **********************************************************
 
-# fetch get only the target sha1
-git init
-git remote add origin $RESOURCE_GIT_URL
-git fetch origin ${RESOURCE_GIT_REV}
-git reset --hard FETCH_HEAD
-
-# copy the resource subdirectory to
-cp -a ./resource/. $TARGET_PATH
-
-# go back 2 levels
-cd ../
-
-# delete the tmp directory
-rm -rf $TEMP_PATH
-
 PKG_VERSION=v2.4
 RESOURCE_GITHUB_URL="https://github.com/tudat-team/tudat-resources/releases/download/$PKG_VERSION/resource.tar.gz"
 
