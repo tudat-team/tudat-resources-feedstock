@@ -27,7 +27,24 @@ requirements:
     # tools (GNU make, Autotool, CMake) and compilers (real cross, pseudo-cross,
     # or native when not cross-compiling), and any source pre-processors.
     - cmake
-    - make # [unix]
+    - make                             # [unix]
+    - curl
+  run:
+    - python
+    - pip
+    - git
+
+test:
+  requires:
+    - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
+    - cmake
+    - curl
+  source_files:
+    - test/test_binary
+  commands:
+    - cd ./test/test_binary
+    - bash run_binary_test.sh
 
 about:
   home: http://tudat.tudelft.nl/
