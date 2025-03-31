@@ -10,13 +10,10 @@ provider:
 
 build_platform:
   osx_arm64: osx_64
-test_on_native_only: true
-
-appveyor:
-  secure:
-    BINSTAR_TOKEN: 162vzpI6vqJ8dKusUseZODe+9BmwpKFBasmD7/L6rgHeqH1mMcfUbrbxdzjjaFE9
 
 azure:
   # toggle for storing the conda build_artifacts directory (including the
   # built packages) as an Azure pipeline artifact that can be downloaded
-  store_build_artifacts: True
+  store_build_artifacts: False
+
+test: native_and_emulated
