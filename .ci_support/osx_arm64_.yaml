@@ -10,12 +10,12 @@ channel_sources:
 - conda-forge, defaults
 channel_targets:
 - tudat-team main
-curl:
-- '8'
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '18'
+libcurl:
+- '8'
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
