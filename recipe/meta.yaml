@@ -30,6 +30,10 @@ requirements:
     - cmake
     - make                             # [unix]
     - curl
+  run:
+    - python
+    - pip
+    - git
 
 test:
   requires:
