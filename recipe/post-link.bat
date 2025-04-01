@@ -59,3 +59,13 @@ if exist "%RESOURCE_PATH%" echo "Directory %RESOURCE_PATH% exists"
 
 @REM [Optional] Delete the original tar file
 del .\resource.tar.gz
+
+@REM Clone and install pyTrk234
+set "TARGET_DIR=%CONDA_PREFIX%\share\external-repo"
+
+if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
+cd /d "%TARGET_DIR%"
+
+git clone https://github.com/NASA-PDS/PyTrk234.git .
+
+pip install .

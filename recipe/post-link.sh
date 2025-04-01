@@ -41,3 +41,12 @@ tar -xvf resource.tar.gz
 
 # [Optional] Delete the original tar file
 rm -rf resource.tar.gz
+
+# Clone and install pyTrk234
+TARGET_DIR="$CONDA_PREFIX/share/external-repo"
+mkdir -p "$TARGET_DIR"
+cd "$TARGET_DIR"
+
+git clone https://github.com/NASA-PDS/PyTrk234.git .
+
+pip install .
